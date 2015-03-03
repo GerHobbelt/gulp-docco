@@ -31,7 +31,7 @@
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "dependencies": {
-    "docco": "^0.7.0",
+    "docco": "git://github.com/GerHobbelt/docco.git",
     "gulp-util": "^3.0.4",
     "marked": "^0.3.3",
     "through2": "^0.6.3",
