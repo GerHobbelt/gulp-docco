@@ -1,4 +1,4 @@
-(function(){
+(function () {
   'use strict';
 
   // Gulp
@@ -16,7 +16,7 @@
   var jsconfig = JSON.parse(fs.readFileSync('./.jshintrc'));
   var esconfig = JSON.parse(fs.readFileSync('./.eslintrc'));
 
-  gulp.task('lint', function(){
+  gulp.task('lint', function () {
     gulp.src([
       'gulpfile.js',
       'index.js',
@@ -32,7 +32,7 @@
 
   var gulco = require('./');
 
-  gulp.task('gulco-classic', function() {
+  gulp.task('gulco-classic', function () {
     gulp.src([
       './test/**/*.litcoffee'
     ])
@@ -40,7 +40,7 @@
     .pipe(gulp.dest('./doc/docco-classic'));
   });
 
-  gulp.task('gulco-linear', function() {
+  gulp.task('gulco-linear', function () {
     gulp.src([
       './test/**/*.litcoffee'
     ])
@@ -48,7 +48,7 @@
     .pipe(gulp.dest('./doc/docco-linear'));
   });
 
-  gulp.task('gulco-parallel', function() {
+  gulp.task('gulco-parallel', function () {
     gulp.src([
       './test/**/*.litcoffee'
     ])
@@ -56,8 +56,5 @@
     .pipe(gulp.dest('./doc/docco-parallel'));
   });
 
-
   gulp.task('gulco', ['gulco-parallel', 'gulco-linear', 'gulco-classic']);
-
-
 }());
