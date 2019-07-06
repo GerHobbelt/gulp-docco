@@ -33,7 +33,7 @@
   "dependencies": {
     "docco": "git://github.com/GerHobbelt/docco.git",
     "gulp-util": "^3.0.4",
-    "marked": "^0.3.3",
+    "marked": "^0.4.0",
     "through2": "^0.6.3",
     "underscore": "^1.8.2",
     "vinyl-fs": "^1.0.0"
